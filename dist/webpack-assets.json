@@ -1,6 +1,6 @@
 {
-  "vendor": {
-    "js": "vendor.bundle.js"
+  "main": {
+    "js": "main.bundle.js"
   },
   "bootstrap": {
     "js": "bootstrap.bundle.js"
@@ -8,8 +8,8 @@
   "fontawesome": {
     "js": "fontawesome.bundle.js"
   },
-  "main": {
-    "js": "main.bundle.js"
+  "vendor": {
+    "js": "vendor.bundle.js"
   },
   "polyfills": {
     "js": "polyfills.bundle.js"

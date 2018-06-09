@@ -21,7 +21,7 @@ const path = require('path');
  */
 const HMR = helpers.hasProcessFlag('hot');
 const METADATA = {
-  title: 'Claims',
+  title: 'Incentive Submission',
   baseUrl: '/',
   isDevServer: helpers.isWebpackDevServer()
 };
@@ -51,7 +51,7 @@ module.exports = function (options) {
       'bootstrap': 'bootstrap-loader',
       'polyfills': './src/polyfills.ts',
       'vendor':    './src/vendor.browser.ts',
-      'main':      './src/main.ts'
+      'main':      './src/main.browser.ts'
     },
     /*
      * Options affecting the resolving of modules.
