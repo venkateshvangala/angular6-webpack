@@ -1,0 +1,15 @@
+<div ngClass="{{status}}" class="status-card-container panel" *ngIf="title">
+  <div class="panel-body">
+    <p *ngIf="title">{{title}}</p>
+    <div class="row">
+      <div class="col-md-6">
+        <label *ngIf="count">{{count}}</label>
+        <sub *ngIf="countPercentage">{{countPercentage}}%</sub>
+      </div>
+      <div class="col-md-6" *ngIf="totalSpace">
+        <p>Total Space </p>
+        <p>{{totalSpace}}</p>
+      </div>
+    </div>
+  </div>
+</div>

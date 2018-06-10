@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+$default-viewer-font-family: 'Raleway', sans-serif;
+$default-numeric-font-family: 'Lato', sans-serif;
+$default-font-family: $default-viewer-font-family;
+$default-font-size: 1.4em;
+
+$default-danger-color: rgb(255, 117, 117);
+$default-font-color: #4c4c4d;
+$rem-cal-background: rgba(232, 232, 232, 1);
+$app_background: #f7f7f7;
+$primary_dark_blue: #4898d3;
+$primary_light_blue: #48b1d5;
+$primary_dark_grey: #4b4d4d;
+$primary_light_grey: #e5e9e9;
+$primary_light_white: #ffffff;
+
+
+$font_black: #000000;
+$font_dove_grey: #666666;
+$font_cerulean: #00aeef;
+$font_dark_grey: #666667;
+$font_light_grey: #989898;
+$font_white: #ffffff;
+$font_silver_chalice: #a1a1a1;
+$font_green: rgb(0, 128, 0);
+$font_table_color: #777777;
+
+$font_weight_xxsmall: 100;
+$font_weight_xsmall: 200;
+$font_weight_small: 300;
+$font_weight_medium: 400;
+$font_weight_large: 500;
+$font_weight_xl: 600;
+$font_weight_xxl: 700;
+
+$font_size_xxsmall: 0.8em;
+$font_size_xsmall: 0.9em;
+$font_size_small: 1em;
+$font_size_medium: 1.4em;
+$font_size_large: 1.6em;
+$font_size_xl: 1.8em;
+$font_size_xxl: 2em;
+
+
+$page-title-color: #00aeef;
+$grey-border-color: #dcdcdc;
+$black-border-color: #333;
+
+$total-request-status-color: #33b5e5;
+$pending-request-status-color: #ffbb33;
+$approved-request-status-color: #2BBBAD;
+$rejected-request-status-color: #ff4444;
+$success-request-status-color: #00C851;
+
+
+@mixin get-padding($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
+}
+
+
+

@@ -1,0 +1,25 @@
+
+import 'jquery';
+require('./assets/vendor/selectize/selectize-standalone.js');
+import 'jquery-ui/ui/widgets/datepicker';
+import 'jquery-ui/ui/widgets/autocomplete';
+import 'jquery-ui/ui/widgets/draggable';
+import 'jquery-ui/ui/widgets/droppable';
+import 'jquery-ui/ui/widgets/sortable';
+import 'jquery-ui/ui/widgets/tooltip';
+import 'datatables.net';
+// require('datatables.net-dt/css/jquery.dataTables.css');
+require('./assets/vendor/jquery-timepicker/jquery.timepicker.js');
+require('./assets/vendor/jquery-timepicker/jquery.timepicker.css');
+require('./assets/vendor/jquery-date-range-picker/jquery.daterangepicker.js');
+require('./assets/vendor/jquery-date-range-picker/daterangepicker.css');
+require('./assets/vendor/jquery-form/jquery.form.js');
+import 'jquery-file-download';
+require('./assets/vendor/mapbox/mapbox.js');
+require('./assets/vendor/mapbox/leaflet.markercluster.js');
+require('./assets/vendor/selectize/selectize-standalone.js');
+import 'jquery-ui';
+require('./assets/vendor/RowSorter/RowSorter.js');
+require('./assets/vendor/jquery-ui/jquery-ui.js');
+require('./assets/js/custom.js');
+import 'crypto-js';

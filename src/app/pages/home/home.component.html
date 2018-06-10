@@ -1,2 +1,75 @@
-<h3> Home Page </h3>
-<a href="#" [routerLink]="['/main/help']"> Help Page </a>
+<page-title-component title="Incentive Submission"> </page-title-component>
+<div class="main-container">
+  <div class="panel">
+    <div class="panel-body">
+      <div class="flex-container">
+        <status-card-component status="total" title="Total Requests" count="25" countPercentage="5" totalSpace="250000"> </status-card-component>
+        <status-card-component status="pending" title="Pending" count="25" countPercentage="5" totalSpace="250000"></status-card-component>
+        <status-card-component status="approved" title="Approved" count="25" countPercentage="5" totalSpace="250000"></status-card-component>
+        <status-card-component status="rejected" title="Rejected" count="25" countPercentage="5" totalSpace="250000"></status-card-component>
+      </div>
+      <div class="row stage-container">
+        <div class="col-md-4">
+          <h5 class="approved-text"> Stage: 01 </h5>
+          <div class="flex-container">
+            <h5>Provides Power bills and payment receipts</h5>
+            <p>1</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="approved-text"> Stage: 02 </h5>
+          <div class="flex-container">
+            <h5>Provides Power bills and payment receipts</h5>
+            <p>1</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="approved-text"> Stage: 03 </h5>
+          <div class="flex-container">
+            <h5>Provides Power bills and payment receipts</h5>
+            <p>1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="accordion" class="accordion">
+    <div class="panel">
+      <div class="panel-header panel-heading" data-toggle="collapse" href="#collapse-incentive-submission" aria-expanded="true"
+        aria-controls="collapse-incentive-submission">
+        <a class="btn btn-link"> Incentive Submission </a>
+      </div>
+      <div id="collapse-incentive-submission" class="in collapse" attr.aria-labelledby="collapse-incentive-submission" data-parent="#accordion">
+        <div class="panel-body">
+          <div class="main-container">
+            <p>INCENTIVE TYPE</p>
+            <select class="incentive-type" id="incentiveTypeId" placeholder="Incentive Type" name="incentive-type"></select>
+          </div>
+
+          <div style="overflow-x:auto;">
+            <table id="example" class="table display" style="width:100%">
+              <thead>
+                <tr>
+                  <th ></th>
+                  <th style="min-width: 115px;">PROPERTY NAME</th>
+                  <th >IT COMPANY </th>
+                  <th >FACILITY</th>
+                  <th >FLOOR</th>
+                  <th >WING</th>
+                  <th >BUILT AREA IN SQFT</th>
+                  <th  style="min-width: 200px !important;">LAST REIMBURSEMENT PERIOD</th>
+                  <th >ACTIONS</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel">
+    <div class="panel-body">
+      <a href="#" [routerLink]="['/main/help']"> Help Page </a>
+    </div>
+  </div>
+</div>

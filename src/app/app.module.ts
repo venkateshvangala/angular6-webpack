@@ -10,7 +10,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-modialog';
 import { BootstrapModalModule } from 'ngx-modialog/plugins/bootstrap';
 import { ROUTES } from './app.routes';
-import { SharedModule } from './shared/shared.module';
+import { SharedModule } from './shared.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 

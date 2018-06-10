@@ -1,0 +1,18 @@
+.page-title-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: start;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $black-border-color;
+  img{
+    margin-right: 12px;
+  }
+  .page-title {
+    font-family: Raleway;
+    font-size: $font_size_xl;
+    font-weight: $font_weight_xl;
+    color: $page-title-color;
+  }
+}
