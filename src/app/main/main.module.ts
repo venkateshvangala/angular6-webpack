@@ -6,6 +6,7 @@ import { SharedModule } from '../shared.module';
 import { ROUTES } from './main.routes';
 import { HomeComponent } from '../pages/home/home.component';
 import { HelpComponent } from '../pages/help/help.component';
+import { MessageComponent } from '../pages/message/message.component';
 
 @NgModule({
   imports: [
@@ -15,8 +16,8 @@ import { HelpComponent } from '../pages/help/help.component';
     FormsModule
   ],
   declarations: [
-    
     HomeComponent,
+    MessageComponent,
     HelpComponent
   ],
   exports: [ ]

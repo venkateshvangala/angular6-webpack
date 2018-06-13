@@ -1,0 +1,483 @@
+<page-title-component title="Self Computation Sheet for computation of eligible Power Cost Reimbursement Incentive"> </page-title-component>
+<div class="row no-gutters">
+  <div class="col-md-8 pl-0">
+    <div class="panel" style="min-height: 655px">
+      <div class="panel-body">
+        <panel-title title="Company Information"> </panel-title>
+        <company-info-tile></company-info-tile>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 pr-0">
+    <div class="panel" style="min-height: 655px">
+      <div class="panel-body">
+        <panel-title title="MD/PARTNERS INFORMATION"> </panel-title>
+        <partners-card index="0"></partners-card>
+        <partners-card index="1"></partners-card>
+        <button type="button" class="btn btn-outline-info pull-right">Add More</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row no-gutters">
+  <div class="panel">
+    <div class="panel-body">
+      <div>
+        <panel-title title="Power Cost Reimbursement Details"></panel-title>
+        <panel-title title="STAGE - I - Documents to be upload"></panel-title>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <file-upload index="1" title="Power Release Certificate(once only)"></file-upload>
+        </div>
+        <div class="col-md-6">
+          <file-upload index="2" title="Power Bill"></file-upload>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <file-upload index="3" title="Power Receipt"></file-upload>
+        </div>
+      </div>
+      <div>
+        <hr/> </div>
+      <div class="stage-2-container">
+        <div>
+          <panel-title title="STAGE - II - Power Cost Reimbursement Details"></panel-title>
+          <label class="label-text">Power Cost Reimbursement Details</label>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <label class="label-text">Industrial Service Connection Number</label>
+            <input class="form-control" />
+          </div>
+          <div class="col-md-3">
+            <label class="label-text">Category of Connection</label>
+            <select class=" dropdowns" id="category" placeholder="Category Type" name="category-type"></select>
+          </div>
+          <div class="col-md-3">
+            <label class="label-text">Connected Power Load at the time of DCP (in HP)</label>
+            <input class="form-control" />
+          </div>
+          <div class="col-md-3">
+            <label class="label-text">Connected Power Load at the time of DCP (in KVA)</label>
+            <input class="form-control" />
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="col-md-3">
+            <label class="label-text">Connected Power Load at the time of incentive application (in HP)</label>
+            <input class="form-control" />
+          </div>
+          <div class="col-md-3">
+            <label class="label-text">Connected Maximum Demand (KVA) </label>
+            <input class="form-control" />
+          </div>
+          <div class="col-md-3">
+            <label class="label-text">Power Release Date</label>
+            <input class="form-control" />
+          </div>
+          <div class="col-md-3">
+            <label class="label-text">"Has any special incentive GO issued by the Government of Andhra Pradesh?</label>
+            <select class="dropdowns" id="secondDropDown" placeholder="Category Type" name="testdropdown-type"></select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <label class="label-text">Upload Relevant Document (Option to choose and upload the file) Eligible Rate per Unit</label>
+            <file-upload></file-upload>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <hr/>
+      </div>
+
+      <div class="particulars-container">
+        <div class="panel">
+          <div class="panel-body">
+            <div class="col-md-4">
+              <label>Particulars to arrive at base consumption for: </label>
+            </div>
+            <div class="col-md-6">
+              <ul class="switch-container">
+                <li>
+                  <button class="btn">Original/New Enterprises</button>
+                </li>
+                <li>
+                  <button class="btn active">Expansion/Diversification enterprise</button>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <div style="margin-top:-12px;">
+                <label style="margin:0px;">With Original</label>
+              </div>
+              <div class="col-md-6 pl-0" style="margin-top: -5px;">
+                <span style="margin-right: 10px;">
+                  <input type="radio" name="decision" checked/>
+                </span>
+                <span>Yes</span>
+              </div>
+              <div class="col-md-6 pl-0" style="margin-top: -5px;">
+                <span style="margin-right: 10px;">
+                  <input type="radio" name="decision" />
+                </span>
+                <span>No</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <hr/>
+      </div>
+      <div class="stage-three-container">
+        <div class="row no-gutters">
+          <div class="col-md-5 pl-0">
+            <panel-title classAttr="no-margin" title="STAGE - II - Power Cost Reimbursement Details"></panel-title>
+          </div>
+          <div class="col-md-7 pl-0">
+            <div class="col-md-4">
+              <select class="dropdowns" id="morethanyear" placeholder="More than a yead>" name="morethanyear"></select>
+            </div>
+            <div class="col-md-8">
+              <div class="col-md-4 pl-0">
+                <label>Select the year</label>
+              </div>
+              <div class="col-md-8 pl-0">
+                <input type="date" class="form-control" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-3">
+                <label class="label-text">Year (Preceding years)</label>
+                <label>No of Units Consumed</label>
+              </div>
+              <div class="col-md-2">
+                <label class="label-text">1st </label>
+                <input class="form-control" />
+              </div>
+              <div class="col-md-2">
+                <label class="label-text">2nd</label>
+                <input class="form-control" />
+              </div>
+              <div class="col-md-2">
+                <label class="label-text">3rd</label>
+                <input class="form-control" />
+              </div>
+              <div class="col-md-3">
+                <label class="label-text">Avg of 3 years Z</label>
+                <input class="form-control" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-md-4 pl-0">
+            <div class="panel">
+              <div class="panel-body">
+                <div class="col-md-8">
+                  <label>Highest units consumed during last 3 years (X)</label>
+                </div>
+                <div class="col-md-4">
+                  <input type="input" class="form-control" value="300" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 pl-0">
+            <div class="panel">
+              <div class="panel-body">
+                <div class="col-md-8">
+                  <label>Highest units consumed during last 3 years (X)</label>
+                </div>
+                <div class="col-md-4">
+                  <input type="input" class="form-control" value="300" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 pr-0">
+            <div class="panel">
+              <div class="panel-body">
+                <div class="col-md-8">
+                  <label>Highest units consumed during last 3 years (X)</label>
+                </div>
+                <div class="col-md-4">
+                  <input type="input" class="form-control" value="300" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-md-3 pl-0">
+            <div class="panel">
+              <div class="panel-body">
+                <div class="col-md-6">
+                  <i class="fa fa-calculator fa-2"> </i>
+                </div>
+                <div class="col-md-6">
+                  <label>Calculate</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 pr-0">
+            <div class="panel">
+              <div class="panel-body">
+                <div class="col-md-9">
+                  <label>Base units per month (M)</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" class="full-height form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div> <hr/> </div>
+
+      <div class="stage-four-container">
+        <div class="row no-gutters">
+          <div class="col-md-8 pl-0">
+            <panel-title classAttr="no-margin" title="STAGE - IV - Calculation of Expansion/Diversification Eligible Incentive Amount"></panel-title>
+          </div>
+          <div class="col-md-4 pr-0">
+            <input type="date" class="form-control" />
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-body">
+            <div style="overflow-x:auto;">
+              <table class="table" style="width:100%">
+                <thead>
+                  <tr>
+                    <th style="max-width: 100px; padding-left: 0px;">Month & Year </th>
+                    <th>Source of Power</th>
+                    <th>Units consumed as per power bill (A) </th>
+                    <th>Excluding Units (B)</th>
+                    <th>Eligible units as per bill (C)</th>
+                    <th>Rate per unit (R)</th>
+                    <th>Amount paid as per bill (P)</th>
+                    <th>Base fixed (M)</th>
+                    <th>Eligible units (E)</th>
+                    <th>Eligible rate of incentive (F)</th>
+                    <th>Eligible Incentive Amount (G)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="max-width: 100px; padding-left: 0px;"> <input type="date" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                  </tr>
+                  <tr>
+                      <td style="max-width: 100px; padding-left: 0px;"> <input type="date" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-md-3 pl-0">
+            <div class="panel">
+              <div class="panel-body">
+                <div class="col-md-6">
+                  <i class="fa fa-calculator fa-2"> </i>
+                </div>
+                <div class="col-md-6">
+                  <label>Calculate</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 pr-0">
+            <div class="panel">
+              <div class="panel-body">
+                <div class="col-md-9">
+                  <label>Total Eligible Incentive Amount (G)</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" class="full-height form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div> <hr/> </div>
+
+      <div class="stage-five-container">
+        <div class="row no-gutters">
+          <div class="col-md-8 pl-0">
+            <panel-title classAttr="no-margin" title="STAGE - V - Incentive Amount Calculation of Original enterprise"></panel-title>
+          </div>
+          <div class="col-md-4 pr-0">
+            <input type="date" class="form-control" />
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-body">
+            <div style="overflow-x:auto;">
+              <table class="table" style="width:100%">
+                <thead>
+                  <tr>
+                    <th style="padding-left: 0px;">Month & Year </th>
+                    <th>Source of Power</th>
+                    <th>Base Units Per Month (d) </th>
+                    <th>Applicable rate of incentive
+                        (for original enterprise)</th>
+                    <th>Eligible incentive amount (h) </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="padding-left: 0px;"> <input type="date" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+                    <td> <input type="tex" class="form-control" /></td>
+
+                  </tr>
+                  <tr>
+                      <td style="padding-left: 0px;"> <input type="date" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                      <td> <input type="tex" class="form-control" /></td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-md-3 pl-0">
+            <div class="panel">
+              <div class="panel-body">
+                <div class="col-md-6">
+                  <i class="fa fa-calculator fa-2"> </i>
+                </div>
+                <div class="col-md-6">
+                  <label>Calculate</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 pr-0">
+            <div class="panel">
+              <div class="panel-body">
+                <div class="col-md-9">
+                  <label>Total Eligible incentive amount (h) </label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" class="full-height form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div><hr/></div>
+
+
+      <div class="stage-six-container">
+        <panel-title classAttr="no-margin" title="STAGE - VI - Final Incentive Amount Calculation"></panel-title>
+        <div class="panel">
+          <div class="panel-body">
+            <div class="col-md-10 pl-0">
+              <h6 class="no-margin">
+                Note : 100% - if date of application is within 3 months from applicability period; 75% - if date of application is from 3 months up to 6 months of applicability period;
+                50%- if date of application is from 6 months to 1 year of applicability period; 0%- if date of application is beyond 1 year of applicability period.
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="panel pull-right">
+          <div class="panel-body">
+            <div class="col-md-4">
+              <i class="fa fa-calculator fa-2"> </i>
+            </div>
+            <div class="col-md-6">
+              <label class="no-margin">Calculate</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-body">
+          <div class="col-md-9 pl-0">
+            <h6>
+                Final eligible incentive amount to be reimbursed (g+h) * z
+            </h6>
+          </div>
+          <div class="col-md-3">
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row no-gutters">
+  <button class="btn btn-info pull-right submit-button-style" data-toggle="modal" data-target="#submit-modal" >SUBMIT </button>
+</div>
+
+<div class="modal modal-overlay overlay-left fade"  tabindex="-1" id="submit-modal" role="dialog" aria-labelledby="filterModal">
+  <div class="modal-dialog" role="document" style="max-width: 450px">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="center-flex-container">
+          <div> <i class="fa fa-check-circle fa-4" aria-hidden="true" style="color: #5cb85c;font-size: 9rem;"></i> </div>
+          <div> Application forwarded to </div> <div>Staff Official</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

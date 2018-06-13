@@ -2,14 +2,18 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { HeaderComponent, SidebarComponent, StatusCardComponent, PageTitleComponent } from './components';
+import { HeaderComponent, SidebarComponent, StatusCardComponent, FileUploadComponent, PageTitleComponent, PanelTitleComponent, CompanyInfoTileComponent, PartnersCardComponent } from './components';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     SidebarComponent,
     PageTitleComponent,
-    StatusCardComponent
+    PanelTitleComponent,
+    StatusCardComponent,
+    CompanyInfoTileComponent,
+    PartnersCardComponent,
+    FileUploadComponent
   ],
   providers: [],
   imports: [
@@ -21,7 +25,11 @@ import { HeaderComponent, SidebarComponent, StatusCardComponent, PageTitleCompon
     HeaderComponent,
     SidebarComponent,
     PageTitleComponent,
-    StatusCardComponent
+    PanelTitleComponent,
+    StatusCardComponent,
+    CompanyInfoTileComponent,
+    PartnersCardComponent,
+    FileUploadComponent
   ]
 })
 export class SharedModule {}

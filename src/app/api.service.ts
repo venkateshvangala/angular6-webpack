@@ -59,15 +59,16 @@ export class APIService {
       }
       apiURL = this.getFullURL(action) + "/" + apiURL;
       let httpSubscriber: any;
-      let headers = new HttpHeaders({
-        "Content-Type": "application/json"
-      });
+      let headers = new HttpHeaders();
+      // let headers = new HttpHeaders({
+      //   "Content-Type": "application/json"
+      // });
 
       httpSubscriber = this.createHTTP(apiInfo, apiURL, payload);
       if(!httpSubscriber) return;
       httpSubscriber.subscribe(
         response => {
-          if (response.status && response.status != "") {
+          if (response && response.status && response.status != "") {
             switch (response.status.toUpperCase()) {
               case "SUCCESS":
                 subscriber.next(response.data);
@@ -151,9 +152,10 @@ export class APIService {
   }
 
   createHTTP(apiInfo: Object, apiURL: string, payload: Object) {
-    let httpSubscriber: any,
-      headers = new HttpHeaders().set("Content-Type", "application/json");
-    switch (apiInfo["method"].toLowerCase()) {
+    let httpSubscriber: any;
+      // let headers = new HttpHeaders().set("Content-Type", "application/json");
+      let headers = new HttpHeaders();
+      switch (apiInfo["method"].toLowerCase()) {
       case "get":
         httpSubscriber = this.httpClient.get(apiURL, { headers });
         break;

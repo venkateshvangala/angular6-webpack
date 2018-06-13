@@ -16,9 +16,9 @@ body {
   padding: 0px 2%;
   height: 100%;
   position: relative;
-  left: 16%;
+  left: 4%;
   overflow: scroll;
-  width: 84%;
+  width: 96%;
   margin: 0;
   font-family: $default-font-family;
   font-size: $default-font-size;
@@ -168,13 +168,12 @@ body {
   table {
     margin-top: 12px;
   }
-
-  th, td {
-    font-size: 12px;
-    font-weight: normal;
-    padding: 10px;
-    text-align: left;
-  }
+}
+th, td {
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0px 0px 10px 10px;
+  text-align: left;
 }
 
 .incentive-inner-table {
@@ -206,4 +205,125 @@ body {
     background: #ffc107;;
     color: #ffffff;
   }
+}
+
+
+label{
+  font-size: 1.5rem;
+}
+
+.file-upload-container, .parners-card-container {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+    padding-left: 0px;
+  }
+}
+
+.pl-0{
+  padding-left: 0px !important;
+}
+.pl-1{
+  padding-left: 1rem !important;
+}
+
+.pr-0{
+  padding-right: 0px !important;
+}
+
+.no-gutters{
+  margin: 0px;
+}
+
+
+
+
+.label-text{
+  font-size: 1rem;
+  color: #d7ccc8;
+  width: 100%;
+}
+
+.label-text{
+  font-weight: normal;
+  font-size: 1.15rem;
+}
+
+company-info-tile .panel {
+  border: none !important;
+  .panel-body{
+    padding: 0px !important;
+    .row {
+      margin: 0px !important;
+      > div {
+        padding: 5px;
+        min-height: 110px;
+        max-height: 200px;
+        border: 1px solid #dcdcdc;
+      }
+    }
+  }
+}
+
+hr{
+  border-width: 3px;
+  border-color: $total-request-status-color;
+}
+
+.base-align-label{
+  min-height: 28px;
+}
+
+.stage-2-container div.row > div {
+  margin-bottom: 15px;
+  > label{
+    min-height: 28px;
+  }
+}
+
+ul.switch-container{
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+  margin-bottom: 0px;
+  li, li:visited, li:active, li:focus, li::after{
+    border: none !important;
+    outline: 0 !important;
+  }
+  li > button{
+    border: 1px solid #eee;
+    border-radius: 20px;
+  }
+  li:first-child button{
+    padding-right: 45px;
+  }
+  li:last-child{
+    margin-left: -22px;
+  }
+
+  button.active{
+    background: #222;
+    color: #ffffff;
+  }
+}
+
+
+.no-margin{
+  margin: 0px;
+}
+
+.full-height{
+    height: 100%;
+}
+
+
+.submit-button-style{
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+
+.center-flex-container{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

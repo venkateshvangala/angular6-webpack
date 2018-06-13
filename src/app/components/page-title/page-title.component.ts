@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
 })
 export class PageTitleComponent {
   @Input() title: string = null;
-  @Input() imgSrc: any = "assets/images/aplogo.png";
+  @Input() imgSrc: any = null;
 }

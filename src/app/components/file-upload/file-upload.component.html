@@ -1,0 +1,17 @@
+<div class="panel file-upload-container" *ngIf="title; else fileUploadContainer">
+  <div class="panel-body">
+    <div class="col-md-1" *ngIf="index">
+      {{index}}
+    </div>
+    <div class="col-md-5" *ngIf="title">
+      <label>{{title}}</label>
+    </div>
+    <div class="col-md-6">
+        <input type="file" class="form-control" />
+    </div>
+  </div>
+</div>
+
+<ng-template #fileUploadContainer>
+    <input type="file" class="form-control" />
+</ng-template>
