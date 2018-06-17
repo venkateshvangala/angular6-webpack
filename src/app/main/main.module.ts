@@ -5,8 +5,10 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared.module';
 import { ROUTES } from './main.routes';
 import { HomeComponent } from '../pages/home/home.component';
+import { StaffComponent } from '../pages/staff/staff.component';
 import { HelpComponent } from '../pages/help/help.component';
 import { MessageComponent } from '../pages/message/message.component';
+import { StaffSecondPartComponent } from '../pages/staff-second-part/staff-second-part.component';
 
 @NgModule({
   imports: [
@@ -18,6 +20,8 @@ import { MessageComponent } from '../pages/message/message.component';
   declarations: [
     HomeComponent,
     MessageComponent,
+    StaffComponent,
+    StaffSecondPartComponent,
     HelpComponent
   ],
   exports: [ ]

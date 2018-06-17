@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent, SidebarComponent, StatusCardComponent, FileUploadComponent, PageTitleComponent, PanelTitleComponent, CompanyInfoTileComponent, PartnersCardComponent } from './components';
+import { RequestCardComponent } from './components/request-card/request-card.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { HeaderComponent, SidebarComponent, StatusCardComponent, FileUploadCompo
     StatusCardComponent,
     CompanyInfoTileComponent,
     PartnersCardComponent,
+    RequestCardComponent,
     FileUploadComponent
   ],
   providers: [],
@@ -29,6 +31,7 @@ import { HeaderComponent, SidebarComponent, StatusCardComponent, FileUploadCompo
     StatusCardComponent,
     CompanyInfoTileComponent,
     PartnersCardComponent,
+    RequestCardComponent,
     FileUploadComponent
   ]
 })

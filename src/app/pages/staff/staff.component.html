@@ -1,0 +1,77 @@
+<page-title-component title="My Pending Requests" imgSrc="assets/images/aplogo.png"> </page-title-component>
+<div class="main-container">
+  <div class="panel">
+    <div class="panel-body">
+      <div class="flex-container">
+        <div class="row">
+          <div class="col-md-3 pr-0">
+            <request-card cardTitle="DTP Space Developer Rental Guarantee" cardTotal="40" cardTotalSpace="2,40,000" stage1Count="50"
+              stage2Count="30"></request-card>
+          </div>
+          <div class="col-md-3 pr-0">
+            <request-card cardTitle="DTP Space Developer Rental Guarantee" cardTotal="40" cardTotalSpace="2,40,000" stage1Count="50"
+              stage2Count="30"></request-card>
+          </div>
+          <div class="col-md-3 pr-0">
+            <request-card cardTitle="DTP Space Developer Rental Guarantee" cardTotal="40" cardTotalSpace="2,40,000" stage1Count="50"
+              stage2Count="30"></request-card>
+          </div>
+          <div class="col-md-3">
+            <request-card cardTitle="DTP Space Developer Rental Guarantee" cardTotal="40" cardTotalSpace="2,40,000" stage1Count="50"
+              stage2Count="30"></request-card>
+          </div>
+          <div class="col-md-3 pr-0">
+            <request-card cardTitle="DTP Space Developer Rental Guarantee" cardTotal="40" cardTotalSpace="2,40,000" stage1Count="50"
+              stage2Count="30"></request-card>
+          </div>
+          <div class="col-md-3 pr-0">
+            <request-card cardTitle="DTP Space Developer Rental Guarantee" cardTotal="40" cardTotalSpace="2,40,000" stage1Count="50"
+              stage2Count="30"></request-card>
+          </div>
+          <div class="col-md-3 pr-0">
+            <request-card cardTitle="DTP Space Developer Rental Guarantee" cardTotal="40" cardTotalSpace="2,40,000" stage1Count="50"
+              stage2Count="30"></request-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="accordion" class="accordion">
+    <div class="panel">
+      <div class="panel-header panel-heading" data-toggle="collapse" href="#collapse-incentive-submission" aria-expanded="true"
+        aria-controls="collapse-incentive-submission">
+        <a class="btn btn-link"> Incentive Submission </a>
+      </div>
+      <div id="collapse-incentive-submission" class="in collapse" attr.aria-labelledby="collapse-incentive-submission" data-parent="#accordion">
+        <div class="panel-body">
+          <div class="main-container">
+            <p>INCENTIVE TYPE</p>
+            <select class="incentive-type" id="incentiveTypeId" placeholder="Incentive Type" name="incentive-type"></select>
+          </div>
+
+          <div style="overflow-x:auto;">
+            <table id="example" class="table display" style="width:100%">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th style="min-width: 105px;">PROPERTY NAME</th>
+                  <th style="min-width: 130px; width: 130px;">IT COMPANY </th>
+                  <th>FACILITY</th>
+                  <th>FLOOR</th>
+                  <th>WING</th>
+                  <th>BUILT AREA IN SQFT</th>
+                  <th style="min-width: 192px;width: 192px;">LAST REIMBURSEMENT PERIOD</th>
+                  <th>ACTIONS</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row no-gutters">
+    <a href="#" [routerLink]="['/main/staff-second-part']" class="btn btn-success pull-right submit-button-style"> Next </a>
+  </div>
+</div>

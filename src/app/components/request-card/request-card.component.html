@@ -1,0 +1,22 @@
+<div class="request-card-container panel" *ngIf="cardTitle">
+  <div class="panel-body">
+    <p class="panel-body-title">{{cardTitle}}</p>
+    <div class="flex-container" style="border: 2px solid #dcdcdd; padding: 0px 5px 2px 5px; border-radius: 3px;">
+      <p style="margin-top: 10px; margin-bottom: 0px;font-family: 'Lato'; font-family: 500;">{{cardTotal}}</p>
+      <div>
+        <label style="margin: 0; font-size: 1rem;">Total Space Sq.Ft</label>
+        <p style=" margin: 0;font-size: 1.2rem;font-family: 'Lato'; font-family: 500;">{{cardTotalSpace}}</p>
+      </div>
+    </div>
+    <h5 class="approved-text"> Stage: 01 </h5>
+    <div class="flex-container" style="border: 2px solid #dcdcdd; padding: 6px; border-radius: 3px;">
+      <label style="    font-size: 1.2rem;margin: 0;">Pending <br/> CAF eligibility</label>
+      <p style="margin:0px;font-family:'Lato';font-weight:500;">{{stage1Count}}</p>
+    </div>
+    <h5 class="approved-text"> Stage: 02 </h5>
+    <div class="flex-container" style="border: 2px solid #dcdcdd; padding: 6px; border-radius: 3px;">
+      <label style="    font-size: 1.2rem;margin: 0;">Pending Clarification <br/> Send by Applicant</label>
+      <p style="margin:0px;font-family:'Lato';font-weight:500;">{{stage2Count}}</p>
+    </div>
+  </div>
+</div>

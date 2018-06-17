@@ -275,7 +275,7 @@ hr{
 .stage-2-container div.row > div {
   margin-bottom: 15px;
   > label{
-    min-height: 28px;
+    min-height: 23px;
   }
 }
 
@@ -326,4 +326,10 @@ ul.switch-container{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.panel-body {
+  .panel-body-title{
+    font-size: 1.5rem;
+  }
 }

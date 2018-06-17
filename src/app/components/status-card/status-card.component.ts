@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { RequestCardComponent } from '../request-card/request-card.component';
 
 @Component({
   selector: 'status-card-component',
